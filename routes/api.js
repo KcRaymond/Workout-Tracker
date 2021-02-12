@@ -1,0 +1,51 @@
+const Workout = require("../models/workoutModel");
+
+module.exports = (app) => {
+  // Gets workouts
+  app.get("/api/workouts", (req, res) => {
+    Workout.find({})
+      .then((data) => res.json(data))
+      .catch((err) => {
+        console.log("error", err);
+        res.json(err);
+      });
+  });
+
+  // Add an exercise
+  app.put("/api/workouts/:id", (req, res) => {
+    Workout.findByIdAndUpdate(
+      req.params.id,
+      { $push: { exercises: req.body } },
+      { new: true, runValidators: true }
+    )
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        console.log("error", err);
+        res.json(err);
+      });
+  });
+
+  // Create a Workout
+  app.post("/api/workouts", function (req, res) {
+    Workout.create({})
+      .then((data) => res.json(data))
+      .catch((err) => {
+        console.log("error", err);
+        res.json(err);
+      });
+  });
+
+  // Find workouts
+  app.get("/api/workouts/range", (req, res) => {
+    Workout.find({})
+      .limit(10)
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
+};
