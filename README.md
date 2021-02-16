@@ -26,7 +26,7 @@ To install necessary dependencies run the following command:
 
 App is deployed to Heroku and uses cloud based Mongo DB Atlas. Full functionality can be demoed by following the provided link or clicking on the sample screenshot.
 
-> <img src="public/assets/app-screenshot.jpg" width="400"></img>
+> <img src="public/assets/app-screenshot.jpg" width="500"></img>
 
 ## Contributing Information:
 
