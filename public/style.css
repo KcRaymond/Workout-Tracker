@@ -5,11 +5,15 @@
   margin: 0;
   padding: 0;
 }
-
-html,
-body,
-.wrapper {
-  height: 100%;
+html {
+  max-width: 1800px;
+  height: 2000px;
+  margin: 0 auto;
+  background-color: black;
+}
+body {
+  height: auto;
+  width: auto;
 }
 
 body {
@@ -17,9 +21,9 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-image: linear-gradient(#15659b, black);
   color: #ffffff;
-  height: 80px;
+  height: 70px;
   padding: 10px;
   line-height: 3;
   font-size: 1.2rem;
@@ -33,19 +37,29 @@ a:visited {
   color: inherit;
 }
 
-nav a:hover{
+nav a:hover {
   opacity: 0.7;
 }
 
 header {
-  height: 150px;
+  background-image: url(./assets/Fitness-tracker-header.jpg);
+  background-color: black;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 212px;
   padding-top: 80px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 header h1 {
   transform: skewX(-2deg);
+  color: white;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #222;
+  background-color: #15659b;
+  opacity: 78%;
 }
 
 select {
@@ -100,7 +114,7 @@ input {
 }
 
 .wrapper {
-  background-color: #f2f8ff;
+  background-color: black;
   padding-bottom: 100px;
 }
 
@@ -108,6 +122,10 @@ input {
 .m-auto {
   margin: 0 auto;
   width: 500px;
+}
+.ui.container.workout,
+.ui.raised.card.m-auto {
+  margin-top: 25px;
 }
 
 form .workout-type,
