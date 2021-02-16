@@ -26,7 +26,7 @@ To install necessary dependencies run the following command:
 
 App is deployed to Heroku and uses cloud based Mongo DB Atlas. Full functionality can be demoed by following the provided link or clicking on the sample screenshot.
 
-    > <img src="https://github.com/KcRaymond/Workout-Tracker/public/assets/app-screenshot.jpg" width="400"></img>
+    > <img src="https://github.com/KcRaymond/Workout-Tracker/blob/master/public/assets/app-screenshot.jpg" width="400"></img>
 
 ## Contributing Information:
 
