@@ -24,10 +24,9 @@ To install necessary dependencies run the following command:
 
 ## Usage Information:
 
-App is deployed to Heroku and uses cloud based Mongo DB Atlas. Full functionality can be demoed by following the provided link or clicking on the sample screenshot. 
-https://limitless-crag-66215.herokuapp.com/
+App is deployed to Heroku and uses cloud based Mongo DB Atlas. Full functionality can be demoed by clicking on the sample screenshot. 
 
-> <a href= "https://limitless-crag-66215.herokuapp.com/" img src="public/assets/app-screenshot.jpg" width="500"></img>
+> <a href= "https://limitless-crag-66215.herokuapp.com/"> <img src="public/assets/app-screenshot.jpg" width="500"></a>
 
 ## Contributing Information:
 
